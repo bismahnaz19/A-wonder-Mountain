@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+    rgba(202, 160, 170, 0.527),
+    rgba(48, 46, 47, 0.527)
+  ),
+  url("img/header.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.main > .navbar {
+  width: 100%;
+  height: 16vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 60px;
+  color: rgb(247, 247, 247);
+}
+
+.main > .navbar > ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main > .navbar > ul > #menu {
+    display: none;
+}
+
+
+.main > .navbar > ul > li {
+  list-style: none;
+  cursor: pointer;
+  font-size: 20px;
+  margin-left: 45px;
+}
+.main > .navbar > ul > li:hover{
+    color: rgb(189, 36, 138);
+}
+
+.main > .navbar > ul .home {
+  color: rgb(189, 36, 138);
+}
+
+.main > .navbar > ul > button {
+  width: 150px;
+  height: 40px;
+  background-color: rgb(189, 36, 138);
+  border-radius: 30px;
+  margin-left: 45px;
+  outline: none;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.main > .navbar > .logo {
+  font-size: 30px;
+  font-family:fantasy;
+}
+
+/* Main Text */
+
+
+.main > .main-text {
+    color: #ffffff;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+
+.main > .main-text > P {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.main > .main-text > hr {
+    width: 140px;
+    height: 5px;
+    margin: 0 auto;
+    background-color: rgb(189, 36, 138);
+    outline: none;
+    border: none;
+}
+
+.main > .main-text > h1 {
+    font-size: 55px;
+    margin: 20px 0;
+}
+
+.main > .main-text > button {
+    width: 150px;
+    height: 40px;
+    background-color: rgb(189, 36, 138);
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.boxes {
+    width: 100%;
+    text-align: center;
+    padding: 80px 0;
+}
+
+.boxes > .box-parents {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.boxes > h1 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.boxes > hr {
+    width: 140px;
+    height: 5px;
+    border: none;
+    margin: 0 auto;
+    background-color: rgb(189, 36, 138);
+    outline: none;
+    margin-bottom: 50px;
+}
+
+.boxes > .box-parents > .box {
+    width: 45%;
+    height: 550px;
+    text-align: center;
+    box-shadow: 0 0 25px #dadada, 0 0 50px #dadada;
+    border-radius: 26px;
+}
+
+.boxes > .box-parents > .box > .img > img {
+    width: 100%;
+    height: 280px;
+    border-top-left-radius: 26px;
+    border-top-right-radius: 26px;
+}
+
+.boxes > .box-parents > .box > h3 {
+    font-size: 30px;
+    margin: 40px 0;
+}
+
+.boxes > .box-parents > .box > p {
+    font-size: 21px;
+    margin-bottom: 30px;
+}
+
+.boxes > .box-parents > .box > button {
+    width: 110px;
+    height: 33px;
+    background-color: rgb(189, 36, 138);
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+
+@media (max-width:450px) {
+    .main > .navbar > ul > li {
+        display: none;
+    }
+
+    .main > .navbar > ul > #menu {
+        display: block;
+        font-size: 40px;
+    }
+
+    .main > .navbar > ul > button {
+        display: none;
+    }
+
+    .main > .navbar {
+        height: 13vh;
+        padding: 0 25px;
+    }
+
+    .main > .main-text > p {
+        width: 90%;
+        margin: 0 auto;
+        padding-bottom: 20px;
+    }
+
+
+    .boxes > .box-parents {
+        flex-direction: column;
+    }
+
+    .boxes > .box-parents > .box {
+        width: 96%;
+        height: 480px;
+        margin-top: 40px;
+    }
+
+    .boxes > .box-parents > .box > .img > img { 
+        height: 200px;
+    }
+
+    
+    .boxes > .box-parents > .box > h3 {
+        font-size: 25px;
+        margin: 27px 0;
+    }
+
+    .boxes > .box-parents > .box > p {
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+
+    }
+
+
+}
